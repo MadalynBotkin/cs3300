@@ -34,6 +34,16 @@ group :production do
 end
 # gem 'mini_magick', '~> 4.8'
 
+
+#adding rspec and mini_racer///////////////////////////////////////////////////////////////////////////////////////////////////////////
+gem 'mini_racer'
+  
+group :development, :test do
+  gem 'rspec-rails', '~> 3.7'
+end
+
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
