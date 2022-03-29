@@ -20,6 +20,16 @@ RSpec.describe Task, type: :model do
   end
 
   context "scopes tests" do
+    let(:params) { { title: "Title", descritpion: "some description" } }
+    before(:each) do
+      Task.create(params)
+      Task.create(params)
+      Task.create(params)
+    end
+
+    it "should return all projects" do
+      expect(Task.count).to eq(3)
+    end
 
   end
 end
