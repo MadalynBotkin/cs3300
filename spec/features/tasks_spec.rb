@@ -16,9 +16,9 @@ RSpec.feature "Projects", type: :feature do
       end
     end
 
-    #Project changed to Task
+    #Project changed to Task, description spelling changed
     scenario "should be successful" do
-      fill_in "Description", with: "Test description"
+      fill_in "Descritpion", with: "Test descritpion"
       click_button "Create Task"
       expect(page).to have_content("Project was successfully created")
     end
