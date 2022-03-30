@@ -42,6 +42,11 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
 end
 
+#Capybara/////////////////////////////////////////////////////////////////////////////////////////////////
+#group :development, :test do
+#  gem 'capybara'
+#end
+
 
 
 # Use Capistrano for deployment
