@@ -16,15 +16,16 @@ RSpec.feature "Projects", type: :feature do
       end
     end
 
-    #description spelled wrong, Project replaced with Task
+    #Project changed to Task
     scenario "should be successful" do
       fill_in "Description", with: "Test description"
       click_button "Create Task"
       expect(page).to have_content("Project was successfully created")
     end
 
+    #Project changed to Task
     scenario "should fail" do
-      click_button "Create Project"
+      click_button "Create Task"
       expect(page).to have_content("Description can't be blank")
     end
   end
