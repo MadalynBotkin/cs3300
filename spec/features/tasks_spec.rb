@@ -4,7 +4,6 @@
 #  pending "add some scenarios (or delete) #{__FILE__}"
 #end
 
-=begin
 require 'rails_helper'
 
 RSpec.feature "Projects", type: :feature do
@@ -18,7 +17,7 @@ RSpec.feature "Projects", type: :feature do
 
     #Project changed to Task, description spelling changed
     scenario "should be successful" do
-      fill_in "Descritpion", with: "Test descritpion"
+      fill_in "description", with: "Test description"
       click_button "Create Task"
       expect(page).to have_content("Project was successfully created")
     end
@@ -63,4 +62,3 @@ RSpec.feature "Projects", type: :feature do
     end
   end
 end
-=end
