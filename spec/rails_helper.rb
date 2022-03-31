@@ -63,11 +63,10 @@ RSpec.configure do |config|
 end
 
 #SimpleCov
-=begin
 require 'simplecov'
 SimpleCov.start 'rails' do
   add_filter '/bin/'
   add_filter '/db/'
   add_filter '/spec/' # for rspec
+  add_filter '/app/helpers/tasks_helper.rb/'
 end
-=end
